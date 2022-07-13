@@ -211,6 +211,11 @@ font-family: 'Press Start 2P', cursive;
 	height: 25%;
 }
 
+.name-2 h2 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 75px;
+}
+
 .blockquote p,
 .blockquote-footer {
 	font-family: 'Cairo', sans-serif;
