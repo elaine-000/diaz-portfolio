@@ -1,0 +1,349 @@
+/*index.css*/
+
+body, * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+/*GOOGLE FONTS*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cairo&family=Chakra+Petch&family=Dancing+Script&family=Edu+SA+Beginner&family=Indie+Flower&family=Press+Start+2P&display=swap');*/
+/*
+font-family: 'Amatic SC', cursive;
+font-family: 'Cairo', sans-serif;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Press Start 2P', cursive;
+*/
+
+
+
+.bg-gradient {
+  --bs-bg-opacity: 0.4;
+  background-color: rgba(var(--bs-gradient-rgb), var(--bs-bg-opacity));
+}
+
+
+.navbar-brand img {
+
+	width: 35%;
+	padding: 0;
+	margin-left: 25px;
+}
+
+.nav-link {
+	font-family: 'Cairo', sans-serif;
+	text-transform: uppercase;
+	margin-right: 15px;
+}
+
+.nav-link:hover {
+	color: white;
+	font-weight: bold;
+}
+
+.nav-item {
+	margin-right: 15px;
+}
+
+/*MAIN CONTENT SECTION*/
+
+#landing {
+	margin-top: 50px;
+	scroll-behavior: smooth;
+	overflow-x: hidden!important
+}
+
+.content {
+	display: flex;
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+
+.left-side {
+	position: relative;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	padding: 0px;
+	text-align: center;
+	background-color: skyblue;
+	opacity: 0.5;
+}
+
+.left-side::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-container h1 {
+	position: relative;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 72px;
+	line-height: 80px;
+	font-weight: 200;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 10px black;
+	text-align: center;
+	margin: 10px;
+
+}
+
+.main-container h4 {
+	position: relative;
+	font-family: 'Cairo', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: black;
+}
+
+.main-container p {
+	position: relative;
+	font-family: 'Chakra Petch', sans-serif;
+	padding: 50px;
+	color: black;
+}
+
+.btn {
+	position: relative;
+	display: inline-block;
+	padding: 30px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: darkred;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all ease 0.5s;
+}
+
+.btn:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 10px;
+	left: 10px;
+	background-color: pink;
+	z-index: -1;
+	transition: all ease 0.5s;
+}
+
+.btn:after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: -10px;
+	left: -10px;
+	background-color: teal;
+	z-index: -1;
+	transition: all ease 0.5s;
+}
+
+.btn:hover {
+	background-color: white;
+	color: crimson;
+	font-weight: bold;
+}
+
+.btn:hover:before {
+	top: -10px;
+	left: -10px;
+	background-color: indianred;
+}
+
+.btn:hover:after {
+	top: 10px;
+	left: 10px;
+	background-color: cadetblue;
+}
+
+
+#profile h1, #profile{
+	background-color: dark;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	margin-top: 20px;
+	padding-top: 70px;
+}
+
+#profile h1 {
+	font-size: 100px;
+}
+
+#aboutme {
+	background-color: #d9dcd6;
+	font-family: 'Amatic SC', cursive;
+	top: 0;
+	left: 0;
+	padding: 100px;
+	padding-top: 50px;
+	margin: 0;
+	height: 100vh;
+	margin-top: 10px;
+
+}
+
+#aboutme .card-me {
+	display: block;
+  font-family: 'Amatic SC', cursive;
+	padding-top: 5px;
+	margin-top: 10px;
+	color: #dec9e9;
+	background-color: #2b2d42;
+	border-color: #ea526f;
+	border-radius: 10px;
+	height: 25%;
+}
+
+.blockquote p,
+.blockquote-footer {
+	font-family: 'Cairo', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	font-kerning: 5;
+}
+
+
+.right-side{
+	position: relative;
+	max-height: 100vh;
+	width: 50%;
+	align-items: center;
+	background-image: url("https://i.postimg.cc/KcdDNTPp/f8d5de94059545e6243b0dd04f428c59.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+}
+
+
+.right-side img {
+	display: flex;
+	width: 100%;
+	object-fit: cover;
+}
+
+.gif-container {
+	display: inline-block;
+	max-height: 100vh;
+}
+
+#projects h1 {
+	margin-top: 50px;
+	padding-top: 38px;
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0;
+	height: 10vh;
+	width: 100%;
+	background-color: #f5cac3;
+}
+
+.card {
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+#card-art {
+	height: 25%;
+}
+
+.row-card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row-card .col-md-8 {
+	padding: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+
+.row-food-1 {
+	width: 20%;
+	height: 20%;
+}
+
+.row-food-2 {
+	width: 20%;
+	height: 20%;
+}
+
+#projects h1 {
+	text-align: center;
+	font-family: 'Chakra Petch', sans-serif;
+	font-size: 70px;
+}
+
+.col-md-7 .card-title {
+	font-family: 'Chakra Petch', sans-serif;
+	font-size: 55px;
+	color: crimson;
+	text-align: center;
+}
+
+.col-md-7 p {
+	font-family: 'Edu SA Beginner', cursive;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.card-art .row-card, 
+.card-a1{
+	display: flex;
+	flex: row;
+	width: 50%;
+	max-height: 50vh;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.card-body .card-text-1 {
+	text-align: right;
+}
+
+.card-body .card-text-2 {
+	text-align: left;
+}
+
+#contact * {
+	text-align: center;
+	padding: 1;
+	margin: 2;
+}
+
+footer {
+	text-align: center;
+	padding: 1rem;
+}
+
+footer > span {
+	padding: 0.5rem;
+}
+
